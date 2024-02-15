@@ -1,30 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/4/4a/Amazon_icon.svg" />
+    <title>Online Shopping site in India: Shop Online for Mobiles, Books, Watches, Shoes and More - Amazon.in</title>
 
-        <!--=====================Favicon===============-->
-        <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
-            
-        <!--=============== REMIX ICONS ===============-->
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!--css file-->
+    <link rel="stylesheet" href="/amazon-clone-page/home.css" />
 
-        <!--=============== CSS ===============-->
-        <link rel="stylesheet" href="/amazon-clone-page/home.css">
-    <title>amazon clone</title>
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
+
 <body>
     <header class="header">
         <div class="container container-header">
             <div class="logo-container border-white">
-                <div class="logo"><img src="/amazon-clone-page/images/amazon_logo.png" alt=""></div>
-                
+                <div class="logo"></div>
+                <span class="dotin">.in</span>
             </div>
 
             <div class="address-container border-white">
+                <p class="hello">Hello</p>
                 <div class="icon-address">
-                    <i class="ri-map-pin-line"></i>
+                    <i class="fa-solid fa-location-dot icon-location"></i>
                     <p>Select your address</p>
                 </div>
             </div>
@@ -35,7 +40,7 @@
                 </select>
                 <input type="text" class="search-input" />
                 <div class="search-icon">
-                    <i class="ri-search-2-line"></i>
+                    <i class="fa-solid fa-magnifying-glass"></i>
                 </div>
 
             </div>
@@ -49,7 +54,7 @@
             </div>
 
             <div class="login-container border-white">
-                <p><span>sign in</span></p>
+                <p>Hello,<span>sign in</span></p>
                 <p class="account">Account & Lists</p>
             </div>
 
@@ -60,20 +65,19 @@
             </div>
 
             <div class="cart-container border-white">
-                <i class="ri-shopping-cart-line"></i>
+                <i class="fa-solid fa-cart-shopping"></i>
                 Cart
             </div>
         </div>
     </header>
 
-    
     <!--navigation-->
     <nav class="nav">
         <div class="container container-nav">
             <ul>
                 <li class="border-white" id="open-nav-sidebar">
                     <span class="open-nav-slider">
-                        <i class="ri-menu-line"></i>
+                        <i class="fa-solid fa-bars"></i>
                         All
                     </span>
                 </li>
@@ -105,58 +109,7 @@
     <div class="sidebar-container-navigation" id="sidebar-container-navigation-id">
         <div class="sidebar-left-part">
             <div class="sidebar-top">
-                <i class="ri-shield-user-fill"></i>
-                <h2>Hello, <span>sign in</span></h2>
-            </div>
-            <div class="sidebar-wrap">
-                <div class="sidebar-item">
-                    <h2>Trending</h2>
-                    <p>Best Sellers</p>
-                    <p>New Releases</p>
-                    <p>Movers and Shakers</p>
-                </div>
-                <div class="sidebar-item">
-                    <h2>Digital Content And Devices</h2>
-                    <p>Echo & Alexa</p>
-                    <p>Fire TV</p>
-                    <p>Kindle E-Readers & eBooks</p>
-                    <p>Audible Audiobooks</p>
-                    <p>Amazon Prime Video</p>
-                    <p>Amazon Prime Music</p>
-                </div>
-                <div class="sidebar-item">
-                    <h2>Shop By Category</h2>
-                    <p>Mobiles, Computes</p>
-                    <p>TV, Appliances, Electronic</p>
-                    <p>Men's Fashion</p>
-                    <p>Women's Fashion</p>
-                    <p>See All</p>
-                </div>
-                <div class="sidebar-item">
-                    <h2>Programs & Features</h2>
-                    <p>Gift Cards & Mobile Recharges</p>
-                    <p>Flight Tickets</p>
-                    <p>#Foundlt-OnAmazon</p>
-                    <p>Clearance store</p>
-                </div>
-                <div class="sidebar-item">
-                    <h2>Help & Settings</h2>
-                    <p>Your Account</p>
-                    <p>Customer Service</p>
-                    <p>Sign in</p>
-                </div>
-            </div>
-        </div>
-        <button id="sidebar-navigation-close">
-            <i class="ri-arrow-left-line"></i>
-        </button>
-    </div>
-
-     <!--sidebar navigation-->
-     <div class="sidebar-container-navigation" id="sidebar-container-navigation-id">
-        <div class="sidebar-left-part">
-            <div class="sidebar-top">
-                <i class="ri-shield-user-fill"></i>
+                <i class="fa-solid fa-circle-user"></i>
                 <h2>Hello, <span>sign in</span></h2>
             </div>
             <div class="sidebar-wrap">
@@ -203,8 +156,11 @@
         </button>
     </div>
 
-      <!--image slider -->
-      <section>
+
+
+
+    <!--image slider -->
+    <section>
         <div class="image-container">
             <div class="image-list">
                 <div class="image-item">
@@ -235,8 +191,8 @@
 
             <div class="image-btn-container">
 
-                <button class="slider-btn" id="slide-btn-left"><i class="ri-arrow-left-s-line"></i></button>
-                <button class="slider-btn" id="slide-btn-right"><i class="ri-arrow-right-s-line"></i>"></i></i></button>
+                <button class="slider-btn" id="slide-btn-left"><i class="fa-solid fa-chevron-left"></i></button>
+                <button class="slider-btn" id="slide-btn-right"><i class="fa-solid fa-chevron-right"></i></i></button>
             </div>
         </div>
     </section>
@@ -458,7 +414,7 @@
             </div>
         </div>
 
-         
+    
     <!--today's deals -->
     <section class="today_deals_container">
         <div class="today_deals_heading">
@@ -469,10 +425,10 @@
         <div class="today_deals_product_container">
             <div class="today_deals_btn_container">
                 <button  class="today_deal_btn" id="today_deal_btn_prev">
-                    <i class="ri-arrow-left-line"></i>
+                    <i class="fa-solid fa-angle-left"></i>
                 </button>
                 <button class="today_deal_btn" id="today_deal_btn_next">
-                    <i class="ri-arrow-right-line"></i>
+                    <i class="fa-solid fa-angle-right"></i>
                 </button>
             </div>
 

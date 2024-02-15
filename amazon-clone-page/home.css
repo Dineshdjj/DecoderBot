@@ -317,6 +317,145 @@ body {
     margin: 2px;
 }
 
+/* Media queries */
+
+/* Small devices (phones, 600px and below) */
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+    }
+
+    .logo {
+        width: 100px;
+        height: 40px;
+        background-size: contain;
+        background-position: center;
+    }
+
+    .address-container p {
+        display: none;
+    }
+
+    .search-container {
+        width: calc(100% - 20px);
+    }
+
+    .search-input {
+        font-size: 0.9rem;
+    }
+
+    .language-container, .login-container, .cart-container {
+        display: none;
+    }
+
+    .nav-right-image-amazon-prime {
+        display: none;
+    }
+
+    .sidebar-container-navigation {
+        width: 80%;
+    }
+
+    /* Adjustments for image slider */
+    .image-container {
+        height: 200px;
+    }
+
+    .image-item {
+        min-width: 100%;
+        height: 200px;
+    }
+
+    .slider-btn {
+        font-size: 30px;
+        padding: 50px 10px;
+    }
+
+    /* Adjustments for today's deals container */
+    .today_deals_container {
+        margin: 15px;
+    }
+
+    .today_deals_product_item {
+        min-width: 100%;
+        height: auto;
+        margin-right: 0;
+    }
+
+    .today_deal_btn {
+        padding: 20px 5px;
+        font-size: 30px;
+    }
+}
+
+/* Medium devices (tablets, 601px to 992px) */
+@media only screen and (min-width: 601px) and (max-width: 992px) {
+    .container {
+        width: 90%;
+    }
+
+    .logo {
+        width: 120px;
+        height: 50px;
+        background-size: contain;
+        background-position: center;
+    }
+
+    .address-container p {
+        display: block;
+        font-size: 0.9rem;
+    }
+
+    .search-container {
+        width: 50%;
+    }
+
+    .search-input {
+        font-size: 1rem;
+    }
+
+    .language-container, .login-container, .cart-container {
+        display: none;
+    }
+
+    .nav-right-image-amazon-prime {
+        display: none;
+    }
+
+    .sidebar-container-navigation {
+        width: 70%;
+    }
+
+    /* Adjustments for image slider */
+    .image-container {
+        height: 300px;
+    }
+
+    .image-item {
+        height: 300px;
+    }
+
+    .slider-btn {
+        font-size: 40px;
+        padding: 100px 20px;
+    }
+
+    /* Adjustments for today's deals container */
+    .today_deals_container {
+        margin: 30px;
+    }
+
+    .today_deals_product_item {
+        min-width: 50%;
+        height: auto;
+    }
+
+    .today_deal_btn {
+        padding: 40px 10px;
+        font-size: 40px;
+    }
+}
+
 
     
     /*sidebar navigation****/
@@ -561,3 +700,138 @@ body {
     background-color: rgb(255,255,255,0.4);
 }
 
+/* Large devices (desktops, 993px to 1200px) */
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+    .container {
+        width: 80%;
+    }
+
+    .logo {
+        width: 150px;
+        height: 60px;
+        background-size: contain;
+        background-position: center;
+    }
+
+    .address-container p {
+        font-size: 1rem;
+    }
+
+    .search-container {
+        width: 40%;
+    }
+
+    .search-input {
+        font-size: 1.1rem;
+    }
+
+    .language-container, .login-container, .cart-container {
+        display: flex;
+    }
+
+    .nav-right-image-amazon-prime {
+        display: block;
+    }
+
+    .sidebar-container-navigation {
+        width: 60%;
+    }
+
+    /* Adjustments for image slider */
+    .image-container {
+        height: 400px;
+    }
+
+    .image-item {
+        height: 400px;
+    }
+
+    .slider-btn {
+        font-size: 50px;
+        padding: 100px 20px;
+    }
+
+    /* Adjustments for today's deals container */
+    .today_deals_container {
+        margin: 50px;
+    }
+
+    .today_deals_product_item {
+        min-width: 33%;
+        height: auto;
+    }
+
+    .today_deal_btn {
+        padding: 60px 15px;
+        font-size: 50px;
+    }
+}
+
+.today_deals_product_list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Adjust as needed */
+}
+
+.today_deals_product_item {
+    width: calc(50% - 10px); /* Adjust as needed */
+    margin-bottom: 20px; /* Adjust as needed */
+}
+
+@media (min-width: 768px) {
+    .today_deals_product_item {
+        width: calc(33.33% - 10px); /* Adjust as needed */
+    }
+}
+
+@media (min-width: 992px) {
+    .today_deals_product_item {
+        width: calc(25% - 10px); /* Adjust as needed */
+    }
+}
+/* Adjust the styles for smaller screens */
+@media (max-width: 767px) {
+    /* Reduce the font size of the header */
+    .header h1 {
+        font-size: 50px; /* Adjust as needed */
+    }
+    
+    /* Adjust the navigation menu */
+    .sidebar-container {
+        position: fixed;
+        top: 0;
+        left: -90%; /* Hide the navigation by default */
+        width: 350px; /* Adjust as needed */
+        height: 100vh;
+        background-color: #fff;
+        transition: left 0.3s ease;
+    }
+
+    .slidebar-show {
+        left: 0; /* Show the navigation */
+    }
+
+    /* Adjust the image slider */
+    .image-slider {
+        margin-top: 80px;
+        width: 300px; /* Adjust as needed */
+    }
+
+    /* Adjust the product card layout */
+    .today_deals_product_list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between; /* Adjust as needed */
+        padding: 0 10px; /* Add padding to prevent overlap */
+    }
+
+    .today_deals_product_item {
+        width: calc(50% - 20px); /* Adjust as needed */
+        margin-bottom: 20px; /* Adjust as needed */
+    }
+}
+@media only screen and (max-width: 600px) {
+    .main {
+        margin-top: 350px; /* Adjust margin-top to create space between the product card and image slider */
+    }
+}
