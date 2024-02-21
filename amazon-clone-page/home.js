@@ -51,6 +51,27 @@ function toggleSidebarNavigation() {
 }
 
 function renderTodayDealProducts() {
+    const todayDeal = [
+        {
+            img: "images/image1.jpg",
+            discount: 20,
+            DealOfDay: "Deal of the Day 1",
+            desc: "Description for Deal 1"
+        },
+        {
+            img: "images/image2.jfif",
+            discount: 30,
+            DealOfDay: "Deal of the Day 2",
+            desc: "Description for Deal 2"
+        },
+        {
+            img: "images/image3.jpg",
+            discount: 30,
+            DealOfDay: "Deal of the Day 2",
+            desc: "Description for Deal 2"
+        },    ];
+}
+function renderTodayDealProducts() {
     let todayDealProductHTML = "";
     todayDeal.forEach(deal => {
         todayDealProductHTML += `
