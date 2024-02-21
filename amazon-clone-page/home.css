@@ -384,7 +384,7 @@ body {
     }
 }
 
-/* Medium devices (tablets, 601px to 992px) */
+
 
     
     /*sidebar navigation****/
@@ -410,6 +410,7 @@ body {
 .slidebar-show {
     transform: translateX(0%);
     background-color: rgba(0, 0, 0, 0.7);
+    display: block;
 }
 
 .sidebar-left-part {
