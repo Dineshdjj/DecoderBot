@@ -117,3 +117,51 @@ body {
     align-items: center;
     animation: pulse 1s ease-in-out infinite;
 }
+
+* Adding Animation to Timer */
+@keyframes pulse{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.2);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
+/* Adding Animation to choices */
+@keyframes fade-in{
+    0%{
+        opacity: 0;
+        transform: translateY(50%);
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media screen and (max-width:900px){
+    .container {
+        width: 100%;
+        margin-top: 50px;
+    }
+    .container h1{
+        font-size: 24px;
+    }
+    .container .question{
+        font-size: 22px;
+    }
+
+    .timer{
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+
+    .startBtn{
+        width: 50%;
+    }
+}
